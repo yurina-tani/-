@@ -448,6 +448,10 @@ input[type="submit"]:hover {
     .page-header h1 a {
         width: 100%;
     }
+    
+    .page-header img{
+        width: 100%;
+    }
 
 
     #about {
