@@ -1,0 +1,553 @@
+@charset "utf-8";
+
+/* 共通設定 */
+/*==================================================*/
+
+body {
+    background-color: #f1ece9;
+    color: #73716d;
+    font-family: Calisto MT, DNP 秀英明朝 Pr6N, sans-serif;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #73716d;
+}
+
+a:hover {
+    opacity: .5;
+    color: #fcb390;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sub-title {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* ヘッダー */
+/*==================================================*/
+.page-header {
+    display: flex;
+    background-color: #f1ece9;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 30px 200px;
+}
+
+.page-header img {
+    width: 70px;
+    height: auto;
+}
+
+.gnav-list {
+    display: flex;
+}
+
+.gnav-item {
+    margin-left: 1.5em;
+    font-size: 16px;
+}
+
+/* About */
+/*==================================================*/
+#about {
+    text-align: center;
+    font-size: 16px;
+}
+
+.lilly {
+    width: 70px;
+}
+
+#about p {
+    margin: 15px 0;
+}
+
+#about p:last-child {
+    margin: 60px 0;
+}
+
+.relative {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin-bottom: 400px;
+    z-index: 500;
+}
+
+.absolute {
+    position: absolute;
+    text-align: center;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.bold {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.icon-item1 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    text-align: center;
+}
+
+.icon-item2 {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    text-align: center;
+}
+
+
+.icon-item3 {
+    position: absolute;
+    top: 400px;
+    left: 40px;
+    text-align: center;
+}
+
+
+.icon-item4 {
+    position: absolute;
+    top: 400px;
+    right: 15px;
+    text-align: center;
+}
+
+
+/* Products */
+/*==================================================*/
+#products {
+    margin-top: 900px;
+}
+
+.item-list{
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    margin-bottom: 300px;
+    justify-items: center;
+    align-items: center;
+}
+
+.product {
+    width: 200px;
+    border-top-left-radius: 50%;
+}
+
+.position {
+    position: relative;
+
+}
+
+.material {
+    position: absolute;
+    top: 160px;
+    left: 140px;
+    width: 50%;
+    height: auto;
+    max-width: 130px;
+}
+
+/* News */
+/*==================================================*/
+#news{
+    margin-bottom: 200px;
+}
+
+.day-box {
+    display: flex;
+    border-top-style: 1px dotted #73716d;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.day-box:last-child {
+    border-bottom: 1px dotted #73716d;
+}
+
+.date {
+    display: flex;
+}
+
+.c {
+    padding-top: 10px;
+}
+
+.dd {
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.tx {
+    padding-left: 30px;
+}
+
+
+
+/* スライドショー */
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+    /*横幅94%で左右に余白を持たせて中央寄せ*/
+    width: 94%;
+    margin: 0 auto;
+}
+
+.slider img {
+    width: 80%;
+    /*スライダー内の画像を横幅100%に*/
+    height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin: 0 10px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+    position: absolute;
+    /*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;
+    /*マウスカーソルを指マークに*/
+    outline: none;
+    /*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;
+    /*矢印の色*/
+    border-right: 2px solid #666;
+    /*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {
+    /*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {
+    /*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 8px;
+    /*ドットボタンのサイズ*/
+    height: 8px;
+    /*ドットボタンのサイズ*/
+    display: block;
+    border-radius: 50%;
+    background: #ccc;
+    /*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+    background: #fcb390;
+    /*ドットボタンの現在地表示の色*/
+}
+
+
+/* Infomation */
+/*==================================================*/
+
+.map {
+    margin-top: 70px;
+    margin-right: 80px;
+}
+
+.infomation {
+    display: flex;
+    justify-content: center;
+}
+
+.adress-item {
+    font-size: 16px;
+    text-align: center;
+}
+
+.sns-list {
+    display: flex;
+    justify-content: center;
+}
+
+.sns-item {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+/* フッター*/
+/*==================================================*/
+footer {
+    text-align: center;
+    background-color: #ddd9d0;
+    padding: 30px 200px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link p {
+    font-size: 24px;
+}
+
+.link-list {
+    display: flex;
+    font-size: 12px;
+}
+
+.link-item {
+    margin-left: 1.5em;
+}
+
+
+/* 商品ページ*/
+/*==================================================*/
+
+
+
+/* CONTACT*/
+/*==================================================*/
+.big-bg {
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#contact .title {
+    margin-top: 0;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 280px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255, 255, 255, .6);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 6rem;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    background-color: #73716d;
+    color: #fff;
+    margin-bottom: 50px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    opacity: .4;
+}
+
+
+
+
+
+
+/* ↑PC版ここまで↑*/
+/*==================================================*/
+
+
+
+
+
+
+/* SP版 ここから*/
+/*==================================================*/
+
+@media (max-width:600px) {
+
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+        height: 160px;
+    }
+
+    .page-header h1 a {
+        width: 100%;
+    }
+
+
+    #about {
+        padding: 1.5em;
+    }
+
+
+    .relative,
+    .absolute,
+    .center,
+    .icon-item1,
+    .icon-item2,
+    .icon-item3,
+    .icon-item4 {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .center,
+    .absolute{
+        transform: none;
+    }
+    
+    .center{
+        text-align: center;
+    }
+    
+    .absolute{
+        margin-bottom: 50px;
+    }
+
+    .relative {
+        width: auto;
+        margin-bottom: 0;
+        padding: 1.5em;
+    }
+
+    .icon-item1,
+    .icon-item2,
+    .icon-item3,
+    .icon-item4 {
+        padding-top: 40px;
+    }
+    
+
+    #products{
+        margin-top: 300px;
+    }
+    
+    .item-list{
+        margin-top: 70px;
+        margin-bottom: 0px;
+    }
+    
+    #news {
+        padding: 1.5em;
+    }
+
+
+    .infomation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map {
+        margin-right: 0px;
+        padding: 1.5em;
+    }
+
+    .adress .title {
+        margin-top: 20px;
+    }
+
+    .link {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1.5em;
+    }
+
+    footer {
+        padding: 1em 1.5em;
+    }
+
+    footer small {
+        font-size: 8px;
+    }
+
+
+
+
+    #contact{
+        padding: 1.5em;
+    }
+
+
+
+
+
+
+
+
+}
