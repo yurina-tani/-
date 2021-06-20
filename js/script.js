@@ -1,3 +1,22 @@
+'use strict';
+
+
+$(function(){
+    ScrollReveal().reveal('#about', { duration: '1000', viewFactor: '0.5', reset: false});
+});
+
+$(function(){
+    ScrollReveal().reveal('.relative', { duration: '1000', viewFactor: '0.5', reset: false});
+});
+
+$(function(){
+    ScrollReveal().reveal('#products', { duration: '1000', viewFactor: '0.5', reset: false});
+});
+
+$(function(){
+    ScrollReveal().reveal('#news', { duration: '1000', viewFactor: '0.5', reset: false});
+});
+
 
 //スライドショー
 
