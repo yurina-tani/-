@@ -235,7 +235,7 @@ img {
 }
 
 .slider img {
-    width: 80%;
+    width: 100%;
     /*スライダー内の画像を横幅100%に*/
     height: auto;
 }

@@ -10,7 +10,7 @@ $(function(){
 });
 
 $(function(){
-    ScrollReveal().reveal('#products', { duration: '1000', viewFactor: '0.5', reset: false});
+    ScrollReveal().reveal('#products', { duration: '300', viewFactor: '0.5', reset: false});
 });
 
 $(function(){
