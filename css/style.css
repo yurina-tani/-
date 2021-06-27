@@ -437,7 +437,7 @@ input[type="submit"]:hover {
 /* SP版 ここから*/
 /*==================================================*/
 
-@media (max-width:428px) {
+@media (max-width:420px) {
 
     .page-header {
         flex-direction: column;
