@@ -1,6 +1,8 @@
 'use strict';
 
 
+//要素ふわっと出す設定
+
 $(function(){
     ScrollReveal().reveal('#about', { duration: '1000', viewFactor: '0.5', reset: false});
 });
@@ -10,7 +12,7 @@ $(function(){
 });
 
 $(function(){
-    ScrollReveal().reveal('#products', { duration: '300', viewFactor: '0.5', reset: false});
+    ScrollReveal().reveal('#products', { duration: '300', viewFactor: '0.1', reset: false});
 });
 
 $(function(){
